@@ -3,11 +3,20 @@
 #include <boost/beast/http.hpp>
 #include <boost/asio/ip/tcp.hpp>
 #include <iostream>
+#include <bsoncxx/json.hpp>
+#include <mongocxx/client.hpp>
+#include <mongocxx/instance.hpp>
+#include <mongocxx/uri.hpp>
 
 namespace beast = boost::beast;
 namespace http = beast::http;
 namespace net = boost::asio;
 using tcp = net::ip::tcp;
+
+// MongoDB instance and client setup
+mongocxx::instance inst{}; 
+mongocxx::client client{mongocxx::uri{}};
+auto db = client["test"]; // this is name of you db in mongodb
 
 int main()
 {
@@ -32,30 +41,32 @@ int main()
         res.set(http::field::server, "Beast");
         res.set(http::field::content_type, "text/plain");
 
-        // Handle routes
-        if (req.target() == "/hello")
+        if (req.method() == http::verb::post && req.target() == "/submit")
         {
-            res.body() = "Hello World!";
+            std::string body = req.body();
+            std::cout << "Received POST /submit: " << body << std::endl;
+
+            res.set(http::field::content_type, "text/plain");
+            res.body() = "Received: " + body;
         }
-        else if (req.target() == "/json")
+        else if (req.method() == http::verb::post && req.target() == "/product")
         {
+            std::string body = req.body();
+            std::cout << "Received POST /product: " << body << std::endl;
+
+            bsoncxx::document::value doc = bsoncxx::from_json(body);
+            auto collection = db["products"];
+            auto result = collection.insert_one(doc.view());
+            std::string insertedId = result->inserted_id().get_oid().value.to_string();
+
             res.set(http::field::content_type, "application/json");
-            res.body() = R"({"message": "This is JSON"})";
+            res.body() = R"({"message": "Inserted", "id": ")" + insertedId + R"("})";
         }
         else
         {
-            res.result(http::status::not_found);
-            res.body() = "404 Not Found";
+            res.body() = "Hello Beast!";
         }
-        if(req.method()  == http::verb::post && req.target()=="/submit"){
-            std::string body  = req.body();
-            std::cout  << "Recieved post method" << body << std::endl;
-            http::response<http::string_body> res{http::status::ok, req.version()};
-            res.set(http::field::content_type, "text/plain");
-            res.body() = "Received: " + body;
-            res.prepare_payload();
-            http::write(socket, res);
-        }
+
         res.prepare_payload();
         http::write(socket, res);
 

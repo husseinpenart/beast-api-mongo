@@ -19,7 +19,6 @@
 # Fortran module files
 *.mod
 *.smod
-*-build
 
 # Compiled Static libraries
 *.lai
@@ -31,3 +30,7 @@
 *.exe
 *.out
 *.app
+# ignore files and folders
+build/
+vscode/
+.vs/
