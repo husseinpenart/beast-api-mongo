@@ -1,8 +1,8 @@
-// Include these at the top if not already
+#include <iostream>
+#include <string> 
 #include <boost/beast/core.hpp>
 #include <boost/beast/http.hpp>
 #include <boost/asio/ip/tcp.hpp>
-#include <iostream>
 #include <bsoncxx/json.hpp>
 #include <mongocxx/client.hpp>
 #include <mongocxx/instance.hpp>
@@ -14,7 +14,7 @@ namespace net = boost::asio;
 using tcp = net::ip::tcp;
 
 // MongoDB instance and client setup
-mongocxx::instance inst{}; 
+mongocxx::instance inst{};
 mongocxx::client client{mongocxx::uri{}};
 auto db = client["test"]; // this is name of you db in mongodb
 
@@ -33,6 +33,7 @@ int main()
         beast::flat_buffer buffer;
         http::request<http::string_body> req;
         http::read(socket, buffer, req);
+        std::string path = std::string(req.target());
 
         std::cout << "Received request:\n"
                   << req << "\n";
@@ -49,6 +50,7 @@ int main()
             res.set(http::field::content_type, "text/plain");
             res.body() = "Received: " + body;
         }
+        // insert any string or any type to db 
         else if (req.method() == http::verb::post && req.target() == "/product")
         {
             std::string body = req.body();
@@ -61,6 +63,60 @@ int main()
 
             res.set(http::field::content_type, "application/json");
             res.body() = R"({"message": "Inserted", "id": ")" + insertedId + R"("})";
+        }
+        // get data from db
+        else if (req.method() == http::verb::get && req.target() == "/products")
+        {
+            auto collection = db["products"];
+            mongocxx::cursor cursor = collection.find({});
+            std::string json = "[";
+            for (auto &&doc : cursor)
+            {
+                json += bsoncxx::to_json(doc) + ",";
+            }
+            if (json.back() == ',')
+                json.pop_back(); // Remove last comma
+            json += "]";
+
+            res.set(http::field::content_type, "application/json");
+            res.body() = json;
+        }
+        // get product by id 
+        else if (req.method() == http::verb::get && path.rfind("/product/", 0) == 0)
+        {
+            // Extract ID from path
+    std::string idStr = path.substr(std::string("/product/").length());
+
+    try {
+        bsoncxx::oid id(idStr); // Convert to MongoDB ObjectId
+        auto collection = db["products"];
+
+        bsoncxx::builder::stream::document filter_builder;
+        filter_builder << "_id" << id;
+
+        auto product = collection.find_one(filter_builder.view());
+
+        if (product) {
+            std::string json = bsoncxx::to_json(*product);
+            http::response<http::string_body> res{http::status::ok, req.version()};
+            res.set(http::field::content_type, "application/json");
+            res.body() = json;
+            res.prepare_payload();
+            http::write(socket, res);
+        } else {
+            http::response<http::string_body> res{http::status::not_found, req.version()};
+            res.set(http::field::content_type, "text/plain");
+            res.body() = "Product not found.";
+            res.prepare_payload();
+            http::write(socket, res);
+        }
+    } catch (const std::exception& e) {
+        http::response<http::string_body> res{http::status::bad_request, req.version()};
+        res.set(http::field::content_type, "text/plain");
+        res.body() = "Invalid ID format.";
+        res.prepare_payload();
+        http::write(socket, res);
+    }
         }
         else
         {
