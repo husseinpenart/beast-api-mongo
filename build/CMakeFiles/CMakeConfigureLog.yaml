@@ -24,7 +24,7 @@ events:
       The output was:
       0
       MSBuild version 17.12.12+1cce77968 for .NET Framework
-      Build started 4/18/2025 2:25:17 AM.
+      Build started 4/18/2025 3:19:49 AM.
       
       Project "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -58,7 +58,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.09
+      Time Elapsed 00:00:01.03
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -84,7 +84,7 @@ events:
       The output was:
       0
       MSBuild version 17.12.12+1cce77968 for .NET Framework
-      Build started 4/18/2025 2:25:18 AM.
+      Build started 4/18/2025 3:19:50 AM.
       
       Project "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -118,7 +118,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.99
+      Time Elapsed 00:00:01.06
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -137,8 +137,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-oat9cg"
-      binary: "E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-oat9cg"
+      source: "E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-desj1x"
+      binary: "E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-desj1x"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -147,45 +147,45 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-oat9cg'
+        Change Dir: 'E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-desj1x'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_bda94.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1c3b4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.12.12+1cce77968 for .NET Framework
-        Build started 4/18/2025 2:25:19 AM.
+        Build started 4/18/2025 3:19:52 AM.
         
-        Project "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oat9cg\\cmTC_bda94.vcxproj" on node 1 (default targets).
+        Project "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-desj1x\\cmTC_1c3b4.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_bda94.dir\\Debug\\".
+          Creating directory "cmTC_1c3b4.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oat9cg\\Debug\\".
-          Creating directory "cmTC_bda94.dir\\Debug\\cmTC_bda94.tlog\\".
+          Creating directory "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-desj1x\\Debug\\".
+          Creating directory "cmTC_1c3b4.dir\\Debug\\cmTC_1c3b4.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_bda94.dir\\Debug\\cmTC_bda94.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_bda94.dir\\Debug\\cmTC_bda94.tlog\\unsuccessfulbuild".
+          Creating "cmTC_1c3b4.dir\\Debug\\cmTC_1c3b4.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_1c3b4.dir\\Debug\\cmTC_1c3b4.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bda94.dir\\Debug\\\\" /Fd"cmTC_bda94.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1c3b4.dir\\Debug\\\\" /Fd"cmTC_1c3b4.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34436 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bda94.dir\\Debug\\\\" /Fd"cmTC_bda94.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1c3b4.dir\\Debug\\\\" /Fd"cmTC_1c3b4.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oat9cg\\Debug\\cmTC_bda94.exe" /INCREMENTAL /ILK:"cmTC_bda94.dir\\Debug\\cmTC_bda94.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-oat9cg/Debug/cmTC_bda94.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-oat9cg/Debug/cmTC_bda94.lib" /MACHINE:X64  /machine:x64 cmTC_bda94.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_bda94.vcxproj -> E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oat9cg\\Debug\\cmTC_bda94.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-desj1x\\Debug\\cmTC_1c3b4.exe" /INCREMENTAL /ILK:"cmTC_1c3b4.dir\\Debug\\cmTC_1c3b4.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-desj1x/Debug/cmTC_1c3b4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-desj1x/Debug/cmTC_1c3b4.lib" /MACHINE:X64  /machine:x64 cmTC_1c3b4.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_1c3b4.vcxproj -> E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-desj1x\\Debug\\cmTC_1c3b4.exe
         AppLocalFromInstalled:
-          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oat9cg\\Debug\\cmTC_bda94.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_bda94.dir\\Debug\\cmTC_bda94.tlog\\cmTC_bda94.write.1u.tlog" "cmTC_bda94.dir\\Debug\\vcpkg.applocal.log"
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-desj1x\\Debug\\cmTC_1c3b4.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_1c3b4.dir\\Debug\\cmTC_1c3b4.tlog\\cmTC_1c3b4.write.1u.tlog" "cmTC_1c3b4.dir\\Debug\\vcpkg.applocal.log"
         FinalizeBuildStatus:
-          Deleting file "cmTC_bda94.dir\\Debug\\cmTC_bda94.tlog\\unsuccessfulbuild".
-          Touching "cmTC_bda94.dir\\Debug\\cmTC_bda94.tlog\\cmTC_bda94.lastbuildstate".
-        Done Building Project "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oat9cg\\cmTC_bda94.vcxproj" (default targets).
+          Deleting file "cmTC_1c3b4.dir\\Debug\\cmTC_1c3b4.tlog\\unsuccessfulbuild".
+          Touching "cmTC_1c3b4.dir\\Debug\\cmTC_1c3b4.tlog\\cmTC_1c3b4.lastbuildstate".
+        Done Building Project "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-desj1x\\cmTC_1c3b4.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.01
+        Time Elapsed 00:00:01.06
         
       exitCode: 0
   -
@@ -225,8 +225,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-32p9fh"
-      binary: "E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-32p9fh"
+      source: "E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-0np4dq"
+      binary: "E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-0np4dq"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -236,45 +236,45 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-32p9fh'
+        Change Dir: 'E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-0np4dq'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_23e92.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_04d8a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.12.12+1cce77968 for .NET Framework
-        Build started 4/18/2025 2:25:20 AM.
+        Build started 4/18/2025 3:19:53 AM.
         
-        Project "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-32p9fh\\cmTC_23e92.vcxproj" on node 1 (default targets).
+        Project "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0np4dq\\cmTC_04d8a.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_23e92.dir\\Debug\\".
+          Creating directory "cmTC_04d8a.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-32p9fh\\Debug\\".
-          Creating directory "cmTC_23e92.dir\\Debug\\cmTC_23e92.tlog\\".
+          Creating directory "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0np4dq\\Debug\\".
+          Creating directory "cmTC_04d8a.dir\\Debug\\cmTC_04d8a.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_23e92.dir\\Debug\\cmTC_23e92.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_23e92.dir\\Debug\\cmTC_23e92.tlog\\unsuccessfulbuild".
+          Creating "cmTC_04d8a.dir\\Debug\\cmTC_04d8a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_04d8a.dir\\Debug\\cmTC_04d8a.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_23e92.dir\\Debug\\\\" /Fd"cmTC_23e92.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_04d8a.dir\\Debug\\\\" /Fd"cmTC_04d8a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34436 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_23e92.dir\\Debug\\\\" /Fd"cmTC_23e92.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_04d8a.dir\\Debug\\\\" /Fd"cmTC_04d8a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-32p9fh\\Debug\\cmTC_23e92.exe" /INCREMENTAL /ILK:"cmTC_23e92.dir\\Debug\\cmTC_23e92.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-32p9fh/Debug/cmTC_23e92.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-32p9fh/Debug/cmTC_23e92.lib" /MACHINE:X64  /machine:x64 cmTC_23e92.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_23e92.vcxproj -> E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-32p9fh\\Debug\\cmTC_23e92.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0np4dq\\Debug\\cmTC_04d8a.exe" /INCREMENTAL /ILK:"cmTC_04d8a.dir\\Debug\\cmTC_04d8a.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-0np4dq/Debug/cmTC_04d8a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-0np4dq/Debug/cmTC_04d8a.lib" /MACHINE:X64  /machine:x64 cmTC_04d8a.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_04d8a.vcxproj -> E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0np4dq\\Debug\\cmTC_04d8a.exe
         AppLocalFromInstalled:
-          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-32p9fh\\Debug\\cmTC_23e92.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_23e92.dir\\Debug\\cmTC_23e92.tlog\\cmTC_23e92.write.1u.tlog" "cmTC_23e92.dir\\Debug\\vcpkg.applocal.log"
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0np4dq\\Debug\\cmTC_04d8a.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_04d8a.dir\\Debug\\cmTC_04d8a.tlog\\cmTC_04d8a.write.1u.tlog" "cmTC_04d8a.dir\\Debug\\vcpkg.applocal.log"
         FinalizeBuildStatus:
-          Deleting file "cmTC_23e92.dir\\Debug\\cmTC_23e92.tlog\\unsuccessfulbuild".
-          Touching "cmTC_23e92.dir\\Debug\\cmTC_23e92.tlog\\cmTC_23e92.lastbuildstate".
-        Done Building Project "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-32p9fh\\cmTC_23e92.vcxproj" (default targets).
+          Deleting file "cmTC_04d8a.dir\\Debug\\cmTC_04d8a.tlog\\unsuccessfulbuild".
+          Touching "cmTC_04d8a.dir\\Debug\\cmTC_04d8a.tlog\\cmTC_04d8a.lastbuildstate".
+        Done Building Project "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0np4dq\\cmTC_04d8a.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.01
+        Time Elapsed 00:00:01.05
         
       exitCode: 0
   -
@@ -321,8 +321,8 @@ events:
       - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindBoost.cmake:610 (find_package)"
       - "CMakeLists.txt:12 (find_package)"
     directories:
-      source: "E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-zlimh7"
-      binary: "E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-zlimh7"
+      source: "E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-m5nnxb"
+      binary: "E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-m5nnxb"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -331,43 +331,43 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-zlimh7'
+        Change Dir: 'E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-m5nnxb'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_6cdf8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5056d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.12.12+1cce77968 for .NET Framework
-        Build started 4/18/2025 2:25:22 AM.
+        Build started 4/18/2025 3:19:54 AM.
         
-        Project "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zlimh7\\cmTC_6cdf8.vcxproj" on node 1 (default targets).
+        Project "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m5nnxb\\cmTC_5056d.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_6cdf8.dir\\Debug\\".
+          Creating directory "cmTC_5056d.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zlimh7\\Debug\\".
-          Creating directory "cmTC_6cdf8.dir\\Debug\\cmTC_6cdf8.tlog\\".
+          Creating directory "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m5nnxb\\Debug\\".
+          Creating directory "cmTC_5056d.dir\\Debug\\cmTC_5056d.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_6cdf8.dir\\Debug\\cmTC_6cdf8.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_6cdf8.dir\\Debug\\cmTC_6cdf8.tlog\\unsuccessfulbuild".
+          Creating "cmTC_5056d.dir\\Debug\\cmTC_5056d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_5056d.dir\\Debug\\cmTC_5056d.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6cdf8.dir\\Debug\\\\" /Fd"cmTC_6cdf8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zlimh7\\src.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5056d.dir\\Debug\\\\" /Fd"cmTC_5056d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m5nnxb\\src.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34436 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6cdf8.dir\\Debug\\\\" /Fd"cmTC_6cdf8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zlimh7\\src.c"
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5056d.dir\\Debug\\\\" /Fd"cmTC_5056d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m5nnxb\\src.c"
           src.c
-        E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zlimh7\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zlimh7\\cmTC_6cdf8.vcxproj]
-        Done Building Project "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zlimh7\\cmTC_6cdf8.vcxproj" (default targets) -- FAILED.
+        E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m5nnxb\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m5nnxb\\cmTC_5056d.vcxproj]
+        Done Building Project "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m5nnxb\\cmTC_5056d.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zlimh7\\cmTC_6cdf8.vcxproj" (default target) (1) ->
+        "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m5nnxb\\cmTC_5056d.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zlimh7\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zlimh7\\cmTC_6cdf8.vcxproj]
+          E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m5nnxb\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m5nnxb\\cmTC_5056d.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.33
+        Time Elapsed 00:00:00.34
         
       exitCode: 1
   -
@@ -385,8 +385,8 @@ events:
       - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindBoost.cmake:610 (find_package)"
       - "CMakeLists.txt:12 (find_package)"
     directories:
-      source: "E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-vmc41n"
-      binary: "E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-vmc41n"
+      source: "E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-tfih61"
+      binary: "E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-tfih61"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -395,45 +395,45 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-vmc41n'
+        Change Dir: 'E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-tfih61'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_11d07.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_6b1f1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.12.12+1cce77968 for .NET Framework
-        Build started 4/18/2025 2:25:22 AM.
+        Build started 4/18/2025 3:19:55 AM.
         
-        Project "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vmc41n\\cmTC_11d07.vcxproj" on node 1 (default targets).
+        Project "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tfih61\\cmTC_6b1f1.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_11d07.dir\\Debug\\".
+          Creating directory "cmTC_6b1f1.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vmc41n\\Debug\\".
-          Creating directory "cmTC_11d07.dir\\Debug\\cmTC_11d07.tlog\\".
+          Creating directory "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tfih61\\Debug\\".
+          Creating directory "cmTC_6b1f1.dir\\Debug\\cmTC_6b1f1.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_11d07.dir\\Debug\\cmTC_11d07.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_11d07.dir\\Debug\\cmTC_11d07.tlog\\unsuccessfulbuild".
+          Creating "cmTC_6b1f1.dir\\Debug\\cmTC_6b1f1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_6b1f1.dir\\Debug\\cmTC_6b1f1.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_11d07.dir\\Debug\\\\" /Fd"cmTC_11d07.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vmc41n\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6b1f1.dir\\Debug\\\\" /Fd"cmTC_6b1f1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tfih61\\CheckFunctionExists.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34436 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_11d07.dir\\Debug\\\\" /Fd"cmTC_11d07.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vmc41n\\CheckFunctionExists.c"
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6b1f1.dir\\Debug\\\\" /Fd"cmTC_6b1f1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tfih61\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vmc41n\\Debug\\cmTC_11d07.exe" /INCREMENTAL /ILK:"cmTC_11d07.dir\\Debug\\cmTC_11d07.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-vmc41n/Debug/cmTC_11d07.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-vmc41n/Debug/cmTC_11d07.lib" /MACHINE:X64  /machine:x64 cmTC_11d07.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vmc41n\\cmTC_11d07.vcxproj]
-        Done Building Project "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vmc41n\\cmTC_11d07.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tfih61\\Debug\\cmTC_6b1f1.exe" /INCREMENTAL /ILK:"cmTC_6b1f1.dir\\Debug\\cmTC_6b1f1.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-tfih61/Debug/cmTC_6b1f1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-tfih61/Debug/cmTC_6b1f1.lib" /MACHINE:X64  /machine:x64 cmTC_6b1f1.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tfih61\\cmTC_6b1f1.vcxproj]
+        Done Building Project "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tfih61\\cmTC_6b1f1.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vmc41n\\cmTC_11d07.vcxproj" (default target) (1) ->
+        "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tfih61\\cmTC_6b1f1.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vmc41n\\cmTC_11d07.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tfih61\\cmTC_6b1f1.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.42
+        Time Elapsed 00:00:00.43
         
       exitCode: 1
   -
@@ -451,8 +451,8 @@ events:
       - "C:/Program Files/CMake/share/cmake-3.31/Modules/FindBoost.cmake:610 (find_package)"
       - "CMakeLists.txt:12 (find_package)"
     directories:
-      source: "E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-jhxe36"
-      binary: "E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-jhxe36"
+      source: "E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-hjooni"
+      binary: "E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-hjooni"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -461,45 +461,45 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-jhxe36'
+        Change Dir: 'E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-hjooni'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_dffe8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3f820.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.12.12+1cce77968 for .NET Framework
-        Build started 4/18/2025 2:25:23 AM.
+        Build started 4/18/2025 3:19:56 AM.
         
-        Project "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jhxe36\\cmTC_dffe8.vcxproj" on node 1 (default targets).
+        Project "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hjooni\\cmTC_3f820.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_dffe8.dir\\Debug\\".
+          Creating directory "cmTC_3f820.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jhxe36\\Debug\\".
-          Creating directory "cmTC_dffe8.dir\\Debug\\cmTC_dffe8.tlog\\".
+          Creating directory "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hjooni\\Debug\\".
+          Creating directory "cmTC_3f820.dir\\Debug\\cmTC_3f820.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_dffe8.dir\\Debug\\cmTC_dffe8.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_dffe8.dir\\Debug\\cmTC_dffe8.tlog\\unsuccessfulbuild".
+          Creating "cmTC_3f820.dir\\Debug\\cmTC_3f820.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_3f820.dir\\Debug\\cmTC_3f820.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dffe8.dir\\Debug\\\\" /Fd"cmTC_dffe8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jhxe36\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3f820.dir\\Debug\\\\" /Fd"cmTC_3f820.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hjooni\\CheckFunctionExists.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34436 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dffe8.dir\\Debug\\\\" /Fd"cmTC_dffe8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jhxe36\\CheckFunctionExists.c"
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3f820.dir\\Debug\\\\" /Fd"cmTC_3f820.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hjooni\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jhxe36\\Debug\\cmTC_dffe8.exe" /INCREMENTAL /ILK:"cmTC_dffe8.dir\\Debug\\cmTC_dffe8.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-jhxe36/Debug/cmTC_dffe8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-jhxe36/Debug/cmTC_dffe8.lib" /MACHINE:X64  /machine:x64 cmTC_dffe8.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jhxe36\\cmTC_dffe8.vcxproj]
-        Done Building Project "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jhxe36\\cmTC_dffe8.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hjooni\\Debug\\cmTC_3f820.exe" /INCREMENTAL /ILK:"cmTC_3f820.dir\\Debug\\cmTC_3f820.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-hjooni/Debug/cmTC_3f820.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/project/beast/beast_mongo_api/build/CMakeFiles/CMakeScratch/TryCompile-hjooni/Debug/cmTC_3f820.lib" /MACHINE:X64  /machine:x64 cmTC_3f820.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hjooni\\cmTC_3f820.vcxproj]
+        Done Building Project "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hjooni\\cmTC_3f820.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jhxe36\\cmTC_dffe8.vcxproj" (default target) (1) ->
+        "E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hjooni\\cmTC_3f820.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jhxe36\\cmTC_dffe8.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [E:\\project\\beast\\beast_mongo_api\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hjooni\\cmTC_3f820.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.42
+        Time Elapsed 00:00:00.43
         
       exitCode: 1
 ...

@@ -1,82 +1,72 @@
-// #include <boost/beast/core.hpp>
-// #include <boost/beast/http.hpp>
-// #include <boost/beast/version.hpp>
-// #include <boost/asio/ip/tcp.hpp>
-// #include <boost/asio/strand.hpp>
-// #include <nlohmann/json.hpp>
-// #include <iostream>
-// #include <string>
-// #include <thread>
+// Include these at the top if not already
+#include <boost/beast/core.hpp>
+#include <boost/beast/http.hpp>
+#include <boost/asio/ip/tcp.hpp>
+#include <iostream>
 
-// namespace beast = boost::beast;
-// namespace http = beast::http;
-// namespace net = boost::asio;
-// using tcp = boost::asio::ip::tcp;
-// using json = nlohmann::json;
+namespace beast = boost::beast;
+namespace http = beast::http;
+namespace net = boost::asio;
+using tcp = net::ip::tcp;
 
-// void handle_request(http::request<http::string_body> req, http::response<http::string_body>& res) {
-//     if (req.target() == "/hello" && req.method() == http::verb::get) {
-//         json j;
-//         j["message"] = "Hello from C++ Beast API!";
-//         res.result(http::status::ok);
-//         res.set(http::field::content_type, "application/json");
-//         res.body() = j.dump();
-//         res.prepare_payload();
-//     }
-//     else {
-//         res.result(http::status::not_found);
-//         res.set(http::field::content_type, "text/plain");
-//         res.body() = "Not Found";
-//         res.prepare_payload();
-//     }
-// }
-
-// void do_session(tcp::socket socket) {
-//     beast::flat_buffer buffer;
-//     http::request<http::string_body> req;
-//     http::read(socket, buffer, req);
-
-//     http::response<http::string_body> res;
-//     handle_request(std::move(req), res);
-
-//     http::write(socket, res);
-// }
-
-// int main() {
-//     try {
-//         net::io_context ioc{ 1 };
-//         tcp::acceptor acceptor{ ioc, {tcp::v4(), 8080} };
-//         std::cout << "Server running at http://localhost:8080\n";
-
-//         for (;;) {
-//             tcp::socket socket{ ioc };
-//             acceptor.accept(socket);
-
-//             // Use lambda to pass socket to do_session
-//             std::thread{ [socket = std::move(socket)]() mutable {
-//                 do_session(std::move(socket));
-//             } }.detach();
-//         }
-
-//     }
-//     catch (std::exception const& e) {
-//         std::cerr << "Error: " << e.what() << "\n";
-//         return EXIT_FAILURE;
-//     }
-// }
-#include <bsoncxx/json.hpp>
-#include <mongocxx/client.hpp>
-#include <mongocxx/instance.hpp>
-#include <mongocxx/uri.hpp>
-#include <vector>
 int main()
 {
-    mongocxx::instance instance{};
-    mongocxx::client client{mongocxx::uri{}};
-    auto db = client["test"];
-    std::cout << "Collections in 'test' database:\n";
-    for (auto&& name : db.list_collection_names()) {
-        std::cout << "- " << name << "\n";
+    try
+    {
+        net::io_context ioc;
+        tcp::acceptor acceptor(ioc, tcp::endpoint(tcp::v4(), 8081));
+        std::cout << "Waiting for connection on port 8081...\n";
+
+        tcp::socket socket(ioc);
+        acceptor.accept(socket);
+        std::cout << "Client connected!\n";
+
+        beast::flat_buffer buffer;
+        http::request<http::string_body> req;
+        http::read(socket, buffer, req);
+
+        std::cout << "Received request:\n"
+                  << req << "\n";
+
+        http::response<http::string_body> res{http::status::ok, req.version()};
+        res.set(http::field::server, "Beast");
+        res.set(http::field::content_type, "text/plain");
+
+        // Handle routes
+        if (req.target() == "/hello")
+        {
+            res.body() = "Hello World!";
+        }
+        else if (req.target() == "/json")
+        {
+            res.set(http::field::content_type, "application/json");
+            res.body() = R"({"message": "This is JSON"})";
+        }
+        else
+        {
+            res.result(http::status::not_found);
+            res.body() = "404 Not Found";
+        }
+        if(req.method()  == http::verb::post && req.target()=="/submit"){
+            std::string body  = req.body();
+            std::cout  << "Recieved post method" << body << std::endl;
+            http::response<http::string_body> res{http::status::ok, req.version()};
+            res.set(http::field::content_type, "text/plain");
+            res.body() = "Received: " + body;
+            res.prepare_payload();
+            http::write(socket, res);
+        }
+        res.prepare_payload();
+        http::write(socket, res);
+
+        std::cout << "Response sent. Press Enter to exit.\n";
+        std::cin.get();
+    }
+    catch (const std::exception &e)
+    {
+        std::cerr << "Error: " << e.what() << "\n";
+        std::cin.get();
     }
 
+    return 0;
 }
