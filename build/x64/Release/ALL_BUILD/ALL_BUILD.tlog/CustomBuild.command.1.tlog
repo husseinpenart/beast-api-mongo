@@ -1,0 +1,10 @@
+^E:\PROJECT\BEAST\BEAST_MONGO_API\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/project/beast/beast_mongo_api -BE:/project/beast/beast_mongo_api/build --check-stamp-file E:/project/beast/beast_mongo_api/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

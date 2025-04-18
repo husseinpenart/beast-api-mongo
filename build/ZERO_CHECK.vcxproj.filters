@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\project\beast\beast_mongo_api\build\CMakeFiles\64aeb602549a470b56458334e028d15c\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6852052D-4894-3644-A31F-30EEF1F54B18}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
