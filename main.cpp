@@ -125,6 +125,61 @@ int main()
                 http::write(socket, res);
             }
         }
+        else if (req.method() == http::verb::delete_ && path.rfind("/product/", 0) == 0)
+        {
+            std::string id = path.substr(9);
+            bsoncxx::oid objectId(id);
+            auto collection = db["products"];
+            // Perform delete
+            bsoncxx::builder::stream::document filter_builder;
+            filter_builder << "_id" << objectId;
+            auto result = collection.delete_one(filter_builder.view());
+            // Send response
+            http::response<http::string_body> res{http::status::ok, req.version()};
+            res.set(http::field::content_type, "application/json");
+            if (result && result->deleted_count() > 0)
+            {
+                res.body() = R"({"message": "Product deleted successfully"})";
+            }
+            else
+            {
+                res.result(http::status::not_found);
+                res.body() = R"({"error": "Product not found"})";
+            }
+
+            res.prepare_payload();
+            http::write(socket, res);
+        }
+        else if (req.method() == http::verb::put && path.rfind("/product/", 0) == 0)
+        {
+            std::string id = path.substr(9);
+            bsoncxx::oid objectId(id);
+            auto collection = db["products"];
+            // Parse new data from request body
+            std::string body = req.body();
+            bsoncxx::document::value updateData = bsoncxx::from_json(body);
+            // Build the update document
+            bsoncxx::builder::stream::document updateBuilder;
+            updateBuilder << "$set" << updateData.view();
+            bsoncxx::builder::stream::document filter;
+            filter << "_id" << objectId;
+            auto result = collection.update_one(filter.view(), updateBuilder.view());
+            http::response<http::string_body> res{http::status::ok, req.version()};
+            res.set(http::field::content_type, "application/json");
+
+            if (result && result->modified_count() > 0)
+            {
+                res.body() = R"({"message": "Product updated successfully"})";
+            }
+            else
+            {
+                res.result(http::status::not_found);
+                res.body() = R"({"error": "Product not found or not modified"})";
+            }
+
+            res.prepare_payload();
+            http::write(socket, res);
+        }
         else
         {
             res.body() = "Hello Beast!";
