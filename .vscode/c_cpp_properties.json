@@ -6,8 +6,9 @@
         "${workspaceFolder}/**",
         "${vcpkgRoot}/x64-windows/include",
         "${vcpkgRoot}/x64-windows-static/include",
+        "C:/mongo-cxx-driver-install/include",
         "C:/mongo-cxx-driver-install/include/mongocxx/v_noabi",
-        "C:/mongo-cxx-driver-install/include/bsoncxx/v_noabi"
+        "C:/mongo-cxx-driver-install/include/bsoncxx/v_noabi",
       ],
       "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
       "windowsSdkVersion": "10.0.22621.0",
