@@ -1,9 +1,9 @@
 #pragma once
-#include <mongocxx/database.hpp>
+#include <string>
 
 class Base {
-protected:
+public:
     static std::string get_upload_path() {
-        return "uploads/"; 
+        return "../../Uploads/";
     }
 };

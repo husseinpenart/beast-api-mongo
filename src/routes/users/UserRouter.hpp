@@ -4,7 +4,7 @@
 
 namespace http = boost::beast::http;
 
-class ProductRouter {
+class UserRouter {
 public:
     static void route(http::request<http::string_body>& req, http::response<http::string_body>& res, mongocxx::database& db);
 };

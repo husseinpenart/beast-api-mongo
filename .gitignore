@@ -32,6 +32,6 @@
 *.app
 # ignore files and folders
 build/
-vscode/
 .vs/
 uploads/
+.env
