@@ -26,6 +26,9 @@ include_directories(
     src/models/user
     src/routes/mainRouter
     src/routes/users
+    src/routes/postRoute
+    src/models/blog
+    src/controllers/post
 )
 
 # Link directories
@@ -41,6 +44,9 @@ add_executable(BeastMongoApi
     src/controllers/user/UserController.cpp
     src/models/product/Product.cpp
     src/models/user/User.cpp
+    src/models/blog/blogModel.cpp
+    src/controllers/post/postContrllers.cpp
+    src/routes/postRoute/post_route.cpp
 )
 
 # Link libraries

@@ -1,13 +1,12 @@
 #pragma once
-#include <boost/beast/http.hpp>
-#include <mongocxx/database.hpp>
-
-namespace http = boost::beast::http;
-
-class ProductController {
+#include "helper/types.hpp" // Include  alias definitions
+#include <iostream>
+class ProductController
+{
 public:
-    static void create(http::request<http::string_body>& req, http::response<http::string_body>& res, mongocxx::database& db);
-    static void read(http::request<http::string_body>& req, http::response<http::string_body>& res, mongocxx::database& db);
-    static void update(http::request<http::string_body>& req, http::response<http::string_body>& res, mongocxx::database& db);
-    static void del(http::request<http::string_body>& req, http::response<http::string_body>& res, mongocxx::database& db);
+    static void create(HttpReq req, HttpRes res, MongoDB db);
+    static void read(HttpReq req, HttpRes res, MongoDB db);
+    static void update(HttpReq req, HttpRes res, MongoDB db, const std::string &id);
+    static void del(HttpReq req, HttpRes res, MongoDB db, const std::string &id);
+    static void getByid(HttpReq req, HttpRes res, MongoDB db, const std::string &id);
 };
